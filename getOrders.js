@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Orders</title>
+  <title>Admin</title>
 </head>
 <body>
   <h1>Order</h1>
-  <p id="orders"></p>
-  <button onclick="placeOrder()">Place Order</button>
   <button onclick="getOrders()">Get Orders</button>
   <script src="orders.js"></script>
+  <p id="orders"></p>
 </body>
 </html>
