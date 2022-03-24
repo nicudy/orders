@@ -1,0 +1,16 @@
+FROM alpine:3.14
+
+WORKDIR /var/www/app
+
+COPY . ./ 
+
+RUN apt-get update 
+RUN apt-get install python3-pip
+RUN apt-get install flask
+RUN apk-get install npm
+RUN npm install
+RUN export FLASK_APP=orders
+RUN pip install -U flask-cors
+RUN flask start
+
+CMD ["npm", "start"]
